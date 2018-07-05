@@ -1,0 +1,8 @@
+.clearfix {
+  display: inline-block;
+  &:before {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}

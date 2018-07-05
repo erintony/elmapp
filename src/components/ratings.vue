@@ -1,16 +1,16 @@
 <template>
   <div>
-    <h1>about</h1>
+    <h1>评论</h1>
     <p>{{msg}}</p>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'about',
+    name: 'rating',
     data () {
       return {
-        msg: 'about component'
+        msg: 'rating component'
       }
     }
   }

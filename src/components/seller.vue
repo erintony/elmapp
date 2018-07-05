@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>user</h1>
+    <h1>商家</h1>
     <p>{{msg}}, {{getId}}</p>
     <p>{{goods}}</p>
   </div>
@@ -13,10 +13,10 @@
   var goods = appData.goods;
   var ratings = appData.ratings;
   export default {
-    name: 'User',
+    name: 'seller',
     data() {
       return {
-        msg: 'user component',
+        msg: 'seller component',
         id: '',
         goods: goods
       }

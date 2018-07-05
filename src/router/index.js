@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
-import home from '../components/home'
-import about from '../components/about'
-import user from '../components/user'
+import goods from '../components/goods/goods'
+import ratings from '../components/ratings'
+import seller from '../components/seller'
 
 Vue.use(Router)
 
@@ -14,19 +14,20 @@ export default new Router({
       path: '/',
       // name: 'HelloWorld',
       // component: HelloWorld
-      redirect: '/home'
+      redirect: '/goods'
     },
     {
-      path: '/home',
-      component: home
+      path: '/goods',
+      component: goods
     },
     {
-      path: '/about',
-      component: about
+      path: '/ratings',
+      component: ratings
     },
     {
-      path: '/user/:id',
-      component: user
+      path: '/seller/:id',
+      component: seller
     }
-  ]
+  ],
+    linkActiveClass: 'active'
 })
